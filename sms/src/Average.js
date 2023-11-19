@@ -80,11 +80,11 @@ const Average = () => {
           try {
             let url = '';
             if (inputType === 'studentId') {
-              url = `http://localhost:5000/getAverageMarks/${inputValue}`;
+              url = `https://studmanagementsys.onrender.com/getAverageMarks/${inputValue}`;
             } else if (inputType === 'studentName') {
-              url = `http://localhost:5000/getAverageMarksByName/${inputValue}`;
+              url = `https://studmanagementsys.onrender.com/getAverageMarksByName/${inputValue}`;
             } else if (inputType === 'class') {
-              url = `http://localhost:5000/getAverageMarksByClass/${inputValue}`;
+              url = `https://studmanagementsys.onrender.com/getAverageMarksByClass/${inputValue}`;
             }
       
             const response = await fetch(url);

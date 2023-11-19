@@ -89,7 +89,7 @@ const ShowSubs = () => {
 
     const handleSearch = async() =>{
         try {
-            const response = await fetch(`http://localhost:5000/getSubjects/${studentId}`);
+            const response = await fetch(`https://studmanagementsys.onrender.com/getSubjects/${studentId}`);
             if (!response.ok) {
               if (response.status === 404) {
                   setNotFound(true);
@@ -114,7 +114,7 @@ const ShowSubs = () => {
 
   const handleSave = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/updateSubjects/${studentId}`, {
+      const response = await fetch(`https://studmanagementsys.onrender.com/updateSubjects/${studentId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

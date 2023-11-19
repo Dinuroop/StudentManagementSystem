@@ -76,7 +76,7 @@ const MultiSearch = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/search/${searchType}/${searchTerm}`);
+      const response = await fetch(`https://studmanagementsys.onrender.com/search/${searchType}/${searchTerm}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

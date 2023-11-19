@@ -72,7 +72,7 @@ const SubjectDetails = () => {
 
   const handleAddSubjects = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/${StudentId}/addSubjects`, {
+      const response = await fetch(`https://studmanagementsys.onrender.com/${StudentId}/addSubjects`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -8,7 +8,7 @@ const [error, setError] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:5000/get');
+            const response = await fetch('https://studmanagementsys.onrender.com/get');
             console.log(response);
             if (!response.ok) {
               throw new Error('Network response was not ok');

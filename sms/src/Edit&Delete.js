@@ -88,7 +88,7 @@ const EditDelete = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/get/${searchedStudentId}`);
+      const response = await fetch(`https://studmanagementsys.onrender.com/get/${searchedStudentId}`);
       if (!response.ok) {
         if (response.status === 404) {
             setNotFound(true);
@@ -113,7 +113,7 @@ const EditDelete = () => {
 
   const handleSave = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/update/${searchedStudentId}`, {
+      const response = await fetch(`https://studmanagementsys.onrender.com/update/${searchedStudentId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ const EditDelete = () => {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/delete/${searchedStudentId}`, {
+      const response = await fetch(`https://studmanagementsys.onrender.com/delete/${searchedStudentId}`, {
         method: 'DELETE',
       });
 
