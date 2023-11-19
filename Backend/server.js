@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
 })
 
 const pool = mysql.createPool({
-    host : 'localhost',
+    host : '0.0.0.0/0',
     user : 'root',
     password :'Dinu@2468',
     database : 'sms2',
@@ -403,4 +403,4 @@ const calculateAverageMarks = async (searchType, searchValue) => {
   return query; 
 };
 
-app.listen(5000,()=>console.log("Listening at port 5000"));
+app.listen(process.env.PORT||5000,()=>console.log("Listening at port 5000"));
