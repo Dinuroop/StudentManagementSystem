@@ -17,7 +17,10 @@ const pool = mysql.createPool({
     user : 'root',
     password :'Dinu@2468',
     database : 'sms2',
-    connectionLimit : 10
+    connectionLimit : 10,
+    waitForConnections: true,
+    queueLimit: 0,
+    connectTimeout: 30000,
 })
 
 pool.query(`select * from students`,(err,res)=>{
