@@ -1,0 +1,31 @@
+.students-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+  }
+  
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .students-table th, .students-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .students-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
