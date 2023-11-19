@@ -203,9 +203,9 @@ const EditDelete = () => {
             Date of Birth:
             <input
               type="date"
-              name="DateOfBirth"
+              name="DateOfBrth"
               value={studentDetails.DateOfBrth}
-              onChange={(e) => setStudentDetails({ ...studentDetails, DateOfBirth: e.target.value })}
+              onChange={(e) => setStudentDetails({ ...studentDetails, DateOfBrth: e.target.value })}
               disabled={!isEditing}
             />
           </label>
