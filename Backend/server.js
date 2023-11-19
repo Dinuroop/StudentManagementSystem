@@ -13,15 +13,11 @@ app.get('/',(req,res)=>{
 })
 
 const pool = mysql.createPool({
-    host : '0.0.0.0/0',
+    host : 'viaduct.proxy.rlwy.net',
     user : 'root',
-    password :'Dinu@2468',
-    database : 'sms2',
-    port: 3306,
-    connectionLimit : 10,
-    waitForConnections: true,
-    queueLimit: 0,
-    connectTimeout: 30000,
+    password :'GeH3fBBDabg6HGB1EBHdH4b-631HEAaB',
+    database : 'railway',
+    port: 33796
 })
 
 pool.query(`select * from students`,(err,res)=>{
