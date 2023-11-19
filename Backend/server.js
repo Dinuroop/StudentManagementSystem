@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
 })
 
 const pool = mysql.createPool({
-    host : 'https://studmanagementsys.onrender.com',
+    host : 'studmanagementsys.onrender.com',
     user : 'root',
     password :'Dinu@2468',
     database : 'sms2',
